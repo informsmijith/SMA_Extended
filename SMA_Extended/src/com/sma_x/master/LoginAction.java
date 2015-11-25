@@ -21,7 +21,7 @@ package com.sma_x.master;
 * Copyright @ 2015-2016 
 * All Rights Reserved.
 *  --------------------------------------------------------
-* |-----------SummerSoft Private Ltd ------------------| 
+* |-----------SummerSoft Private Limited ------------------| 
 *  --------------------------------------------------------
 *   B9,9th Floor,Heavenly Plaza,Vazhakala,Kakanad-682021
 ************************************************************
