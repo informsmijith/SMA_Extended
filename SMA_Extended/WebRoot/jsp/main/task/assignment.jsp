@@ -34,12 +34,12 @@
 	<script type="text/javascript" src="<s:url value='assets/js/plugins/forms/selects/bootstrap_multiselect.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/plugins/tables/datatables/datatables.min.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/plugins/tables/datatables/extensions/responsive.min.js'/>"></script>
+	<script type="text/javascript" src="<s:url value='assets/js/core/libraries/jquery_ui/interactions.min.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/plugins/forms/selects/select2.min.js'/>"></script>
     
-	<script type="text/javascript" src="<s:url value='assets/js/core/libraries/jquery_ui/interactions.min.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/core/app.js'/>"></script>
-	<script type="text/javascript" src="<s:url value='assets/js/pages/form_select2.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/custom/custom.js'/>"></script>
+	<script type="text/javascript" src="<s:url value='assets/js/pages/form_select2.js'/>"></script>
 	<script type="text/javascript" src="<s:url value='assets/js/pages/datatables_responsive.js'/>"></script>
 	<!-- /theme JS files -->
 
@@ -406,15 +406,33 @@
                                             </div>
                                         </div>
                                            <div class="col-lg-9">
-												 <div class="form-group">
-														<select multiple="multiple" data-placeholder="Select Team..." class="select-icons">
-															<optgroup label="Team">
-															</optgroup>
-														</select>
-												 </div>
+												<div class="form-group">
+																	<select multiple="multiple" data-placeholder="Select a state..." class="select-icons">
+																		<optgroup label="Services">
+																			<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
+																			<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
+																			<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
+																			<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
+																			<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
+																		</optgroup>
+																		<optgroup label="File types">
+																			<option value="pdf" data-icon="file-pdf">PDF</option>
+																			<option value="word" data-icon="file-word">Word</option>
+																			<option value="excel" data-icon="file-excel">Excel</option>
+																			<option value="openoffice" data-icon="file-openoffice">Open office</option>
+																		</optgroup>
+																		<optgroup label="Browsers">
+																			<option value="chrome" data-icon="chrome" selected="selected">Chrome</option>
+																			<option value="firefox" data-icon="firefox" selected="selected">Firefox</option>
+																			<option value="safari" data-icon="safari" selected="selected">Safari</option>
+																			<option value="opera" data-icon="opera">Opera</option>
+																			<option value="IE" data-icon="IE">IE</option>
+																		</optgroup>
+																	</select>
+																</div>
 											 </div>
 											</div>
-												<div class="panel panel-flat hidden">
+												<div class="panel panel-flat">
 												 <div class="panel-heading">
 														<h5 class="panel-title"><span class="ttype">Team</span> History</h5>
 														<div class="heading-elements">
