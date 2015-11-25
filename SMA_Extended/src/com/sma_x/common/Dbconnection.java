@@ -39,7 +39,7 @@ public class Dbconnection {
 	Statement stmt = null;
 	ResultSet rs =null;
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost:3306/sma_x_1.2";
+	static final String DB_URL = "jdbc:mysql://192.168.10.50:3306/sma_x_1.2";
 	static final String USER = "root";
 	static final String PASS = "root";
 	/**
