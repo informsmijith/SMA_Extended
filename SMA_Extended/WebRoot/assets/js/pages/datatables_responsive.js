@@ -22,7 +22,7 @@ $(function() {
         columnDefs: [{ 
             orderable: false,
             width: '100px',
-            targets: [ 5 ]
+            targets: [ 3 ]
         }],
         dom: '<"datatable-header"fl><"datatable-scroll-wrap"t><"datatable-footer"ip>',
         language: {
@@ -51,18 +51,18 @@ $(function() {
             }
         },
         columnDefs: [
-            {
-                className: 'control',
-                orderable: false,
-                targets:   0
-            },
+//            {
+//                className: 'control',
+//                orderable: false,
+//                targets:   1
+//            },
             { 
                 width: "100px",
-                targets: [6]
+                targets: [3]
             },
             { 
                 orderable: false,
-                targets: [6]
+                targets: [3]
             }
         ],
         order: [1, 'asc']
@@ -85,11 +85,11 @@ $(function() {
             },
             { 
                 width: "100px",
-                targets: [5]
+                targets: [3]
             },
             { 
                 orderable: false,
-                targets: [5]
+                targets: [3]
             }
         ]
     });
@@ -111,11 +111,11 @@ $(function() {
             },
             { 
                 width: "100px",
-                targets: [6]
+                targets: [3]
             },
             { 
                 orderable: false,
-                targets: [6]
+                targets: [3]
             }
         ],
         order: [1, 'asc']

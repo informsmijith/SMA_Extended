@@ -21,7 +21,7 @@ $(function() {
         columnDefs: [{ 
             orderable: false,
             width: '100px',
-            targets: [ 5 ]
+            targets: [ 3 ]
         }],
         dom: '<"datatable-header"fCl><"datatable-scroll"t><"datatable-footer"ip>',
         language: {
@@ -101,7 +101,7 @@ $(function() {
 
 
     // Add placeholder to the datatable filter option
-    $('.dataTables_filter input[type=search]').attr('placeholder', 'Type to filter...');
+    $('.dataTables_filter input[type=search]').attr('placeholder', 'Filter Tickets...');
 
 
     // Enable Select2 select for the length option

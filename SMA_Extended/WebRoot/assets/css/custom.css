@@ -302,15 +302,17 @@
   height: 100%;
   border-radius: 0;
 }
-.inmodal .modal-header {
-    padding: 30px 15px;
-    text-align: center;
-}
 .inmodal .modal-title {
     font-size: 26px;
 }
 .inmodal .modal-body {
     background: #f8fafb;
+}
+.inmodal .modal-header {
+   padding-top: 4px;
+}
+.inmodal .modal-header .close {
+    top: 33%;
 }
 .modal-body {
     padding: 20px 30px 30px 30px;
@@ -318,6 +320,9 @@
 
 .modal-footer {
     padding-top: 15px;
+}
+.inmodal .modal-content .panel-heading{
+	padding: 10px 20px !important;
 }
 
 /**/
@@ -515,4 +520,7 @@
   overflow: hidden;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.set-align {
+    margin-top: 1.2%;
 }
