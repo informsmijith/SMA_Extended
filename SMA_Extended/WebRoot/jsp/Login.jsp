@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
