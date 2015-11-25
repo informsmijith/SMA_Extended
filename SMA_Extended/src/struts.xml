@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="SMA_Extended" extends="struts-default">
+<interceptors>
+<interceptor class="com.sma_x.master.LoginInterceptor" name="loginInterceptor">
+</interceptor>
+<interceptor-stack name="loginGolfie">
+<interceptor-ref name="loginInterceptor"/>
+<interceptor-ref name="defaultStack" />
+</interceptor-stack>
+</interceptors>
+<action name="Login" class="com.sma_x.master.LoginAction" method="userLogin">
+<result name="success" type="redirect">Dashboard</result>
+<result name="error">/jsp/Login.jsp</result>
+</action>
+<action name="Dashboard" class="com.sma_x.master.LoginAction" method="login">
+<result name="success">/jsp/main/dashboard.jsp</result>
+<result name="error">/jsp/global/error_404.jsp</result>
+<result name="login">/jsp/Login.jsp</result>
+</action>
+<action name="Assignment" class="com.sma_x.task.Assignment" method="taskAssignment">
+<interceptor-ref name="loginGolfie"/>
+<result name="success">/jsp/main/task/assignment.jsp</result>
+<result name="error">/jsp/global/error_404.jsp</result>
+<result name="login">/jsp/Login.jsp</result>
+</action>
+<!-- <action name="Ticket-Assign" class="com.sma_x.task.Assignment" method="tktAssignment"> -->
+<!-- <interceptor-ref name="loginGolfie"/> -->
+<!-- <result name="success">/jsp/main/task/ticket_assign.jsp</result> -->
+<!-- <result name="error">/jsp/global/error_404.jsp</result> -->
+<!-- <result name="login">/jsp/Login.jsp</result> -->
+<!-- </action> -->
+<action name="Logout" class="com.sma_x.master.LoginAction" method="userLogout">
+<result name="success">/jsp/Login.jsp</result>
+<result name="error">/jsp/global/error_404.jsp</result>
+</action>
+</package>
+<package name="Golfie-json" extends="json-default">
+</package>
+</struts>
